@@ -41,13 +41,35 @@ select:-webkit-autofill:focus {
 /* <============================ ScrollToTop ==============================> */
 
 @keyframes border-transform {
-  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
-  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
-  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
-  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
-  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
-  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
-  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
 }
 
 .progress-wrap {
@@ -59,7 +81,7 @@ select:-webkit-autofill:focus {
   cursor: pointer;
   display: block;
   border-radius: 50px;
-  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
@@ -124,13 +146,11 @@ select:-webkit-autofill:focus {
   display: grid;
   place-items: center;
   z-index: 9999999;
+  font-family: 'Bungee Shade', cursive;
 }
 
-.preloader h1 {
-  color: #fff;
-  font-weight: bolder;
-  font-size: 90px;
-  font-family: "Blaka", cursive !important;
+.preloader img {
+  width: 120px;
 }
 
 .N {
@@ -232,7 +252,7 @@ body.cursor-effect #cursor {
 }
 
 .logo {
-  font-size: 45px;
+  font-size: 48px;
   margin-left: 5rem;
   z-index: 5;
   transition: all 0.9s ease;
@@ -269,6 +289,7 @@ body.cursor-effect #cursor {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .line {
@@ -308,6 +329,7 @@ body.cursor-effect #cursor {
   padding-left: 3rem;
   z-index: 4;
   flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-items {
@@ -336,7 +358,7 @@ body.cursor-effect #cursor {
 
 .menu-title {
   color: #fff;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .menu-bg-title {
@@ -502,7 +524,7 @@ body.cursor-effect #cursor {
 .ntn {
   display: block;
   margin: 50px auto;
-  width: fit-content;
+  width: max-content;
   border: 1px solid #ff004f;
   padding: 14px 50px;
   border-radius: 6px;
@@ -707,9 +729,13 @@ button:hover .circle .icon.arrow {
 /* Mobile Responsiveness */
 @media screen and (max-width: 280px) {
   .logo {
-    font-size: 40px;
+    font-size: 33px;
     margin: 0px;
     z-index: 5;
+  }
+
+  .preloader img {
+    width: 78px;
   }
 
   #navbar {
@@ -961,9 +987,14 @@ button:hover .circle .icon.arrow {
 /* Mobile Responsiveness */
 @media screen and (min-width: 320px) and (max-width: 800px) {
   .logo {
-    font-size: 45px;
+    font-size: 40px;
     margin: 0px;
     z-index: 5;
+  }
+
+
+  .preloader img {
+    width: 95px;
   }
 
   #navbar {
@@ -986,6 +1017,7 @@ button:hover .circle .icon.arrow {
     transition: all 0.6s linear;
     top: 0px;
     right: 0;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1051,17 +1083,12 @@ button:hover .circle .icon.arrow {
 
   .title {
     color: #fff;
-    font-size: 34px;
+    font-size: 31px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1.4;
     text-transform: uppercase;
     margin-top: 30px;
-  }
-
-  .menu-title {
-    color: #fff;
-    font-size: 26px;
   }
 
   .menu-number {
@@ -1190,7 +1217,7 @@ button:hover .circle .icon.arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 23px;
     margin-bottom: 0;
     gap: 20px;
   }
@@ -1218,7 +1245,7 @@ button:hover .circle .icon.arrow {
     letter-spacing: 2px;
     line-height: 1.4;
     font-weight: 600;
-}
+  }
 
   .nav-link {
     padding-top: 28px;
@@ -1243,7 +1270,7 @@ button:hover .circle .icon.arrow {
     font-family: "Nunito", sans-serif;
   }
 
-  .title:after{
+  .title:after {
     display: none;
   }
 }

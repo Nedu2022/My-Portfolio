@@ -32,7 +32,7 @@
       <!-- --------------Preloader----------------- -->
 
       <div class="preloader">
-        <h1><span class="N">N</span>C</h1>
+        <img src="/images/favicon.png" alt="">
       </div>
 
       <!-- --------------ScrollToTop----------------- -->
@@ -49,7 +49,7 @@
 
       <header class="header">
         <nav id="navbar">
-          <div href="/index.html" class="logo">
+          <div class="logo">
             <h1><span class="logo-name">N</span>C</h1>
           </div>
 
@@ -331,15 +331,14 @@
       });
       $("body").css({
         overflow: "auto",
-        "overflow-x": "hidden",
-        "font-family": "Blaka"
+        "overflow-x": "hidden"
       });
     }
 
     $(window).on("load", function () {
       setTimeout(function () {
         HideLoad(); // call out animations.
-      }, 2000);
+      }, 3000);
     });
   });
 </script>
