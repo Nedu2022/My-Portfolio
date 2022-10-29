@@ -33,7 +33,7 @@ select:-webkit-autofill:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff004f;
+  background-color: #16c1b7;
   border-radius: 10px;
 }
 
@@ -126,7 +126,7 @@ select:-webkit-autofill:focus {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #ff004f;
+  stroke: #16c1b7;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;
@@ -257,7 +257,7 @@ body.cursor-effect #cursor {
 
 .logo-name {
   font-family: "Blaka", cursive;
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .logo h1 {
@@ -288,7 +288,7 @@ body.cursor-effect #cursor {
 .line {
   width: 100%;
   height: 3px;
-  background-color: #ff004f;
+  background-color: #16c1b7;
   transition: all 0.8s;
 }
 
@@ -396,7 +396,7 @@ body.cursor-effect #cursor {
 }
 
 #navbar .nav-items li .menu-title:hover {
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .overlay {
@@ -443,7 +443,7 @@ body.cursor-effect #cursor {
 .animate-bar {
   width: 5rem;
   height: 4px;
-  background-color: #ff004f;
+  background-color: #16c1b7;
   margin: 10px 10px;
   position: relative;
 }
@@ -506,7 +506,7 @@ body.cursor-effect #cursor {
   width: 80px;
   height: 80px;
   color: #fff;
-  background: #ff004f;
+  background: #16c1b7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,7 +532,7 @@ body.cursor-effect #cursor {
 
 
 .service-container .services-list:hover .icon {
-  box-shadow: 0 0 0 400px #ff004f;
+  box-shadow: 0 0 0 400px #16c1b7;
 }
 
 .service-container .services-list .content {
@@ -637,7 +637,7 @@ button.learn-more .circle {
   width: 3rem;
   height: 3rem;
   background: transparent;
-  border: 1px solid #ff004f;
+  border: 1px solid #16c1b7;
   border-radius: 1.625rem;
 }
 
@@ -721,7 +721,7 @@ button:hover .circle .icon.arrow {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #16c1b7;
   transform: translateY(-5px);
 }
 

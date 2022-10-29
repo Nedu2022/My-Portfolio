@@ -32,7 +32,7 @@ select:-webkit-autofill:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff004f;
+  background-color: #16c1b7;
   border-radius: 10px;
 }
 
@@ -124,7 +124,7 @@ select:-webkit-autofill:focus {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #ff004f;
+  stroke: #16c1b7;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;
@@ -238,7 +238,7 @@ body.cursor-effect #cursor {
 
 .logo-name {
   font-family: "Blaka", cursive;
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .logo h1 {
@@ -270,7 +270,7 @@ body.cursor-effect #cursor {
 .line {
   width: 100%;
   height: 3px;
-  background-color: #ff004f;
+  background-color: #16c1b7;
   transition: all 0.8s;
 }
 
@@ -378,7 +378,7 @@ body.cursor-effect #cursor {
 }
 
 #navbar .nav-items li .menu-title:hover {
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .overlay {
@@ -469,21 +469,21 @@ body.cursor-effect #cursor {
   content: "\f508";
   font-size: 24px;
   padding: 8px;
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .fa-map:before {
   content: "\f279";
   font-size: 24px;
   padding: 8px;
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .fa-paper-plane:before {
   content: "\f1d8";
   font-size: 24px;
   padding: 8px;
-  color: #ff004f;
+  color: #16c1b7;
 }
 
 .contact-info-icon-text h6 {
@@ -525,13 +525,13 @@ body.cursor-effect #cursor {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #16c1b7;
   transform: translateY(-5px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: #16c1b7;
   color: #fff;
   padding: 13px;
   width: 15%;
@@ -560,7 +560,7 @@ form textarea {
 
 .btn.btn3 {
   display: inline-block;
-  background: #ff004f;
+  background: #16c1b7;
   color: #fff;
   padding: 12px;
   width: 23%;
@@ -662,7 +662,7 @@ button.learn-more .circle {
   width: 3rem;
   height: 3rem;
   background: transparent;
-  border: 1px solid #ff004f;
+  border: 1px solid #16c1b7;
   border-radius: 1.625rem;
 }
 
@@ -867,26 +867,26 @@ button:hover .circle .icon.arrow {
     content: "\f508";
     font-size: 21px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .fa-map:before {
     content: "\f279";
     font-size: 21px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .fa-paper-plane:before {
     content: "\f1d8";
     font-size: 21px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .btn.btn3 {
     display: inline-block;
-    background: #ff004f;
+    background: #16c1b7;
     color: #fff;
     padding: 12px;
     width: 30%;
@@ -1097,7 +1097,7 @@ button:hover .circle .icon.arrow {
 
   #text-holder h3 span {
     font-size: 33px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .overlay {
@@ -1154,7 +1154,7 @@ button:hover .circle .icon.arrow {
   }
 
   #navbar .nav-items li .menu-title:hover {
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .about-header {
@@ -1177,7 +1177,7 @@ button:hover .circle .icon.arrow {
 
   .btn.btn3 {
     display: inline-block;
-    background: #ff004f;
+    background: #16c1b7;
     color: #fff;
     padding: 12px;
     width: 37%;
@@ -1225,21 +1225,21 @@ button:hover .circle .icon.arrow {
     content: "\f508";
     font-size: 18px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .fa-map:before {
     content: "\f279";
     font-size: 18px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .fa-paper-plane:before {
     content: "\f1d8";
     font-size: 18px;
     padding: 8px 8px 0px 3px;
-    color: #ff004f;
+    color: #16c1b7;
   }
 
   .contect-info-line {
