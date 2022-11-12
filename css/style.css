@@ -320,12 +320,12 @@ body.cursor-effect #cursor {
 .text-holder {
   z-index: 2;
   font-family: 'Nunito', sans-serif;
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 .text-holder h1 {
-  font-weight: 300;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 32px;
   text-transform: uppercase;
 }
 
