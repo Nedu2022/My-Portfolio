@@ -63,25 +63,22 @@ addEventListener("load", function () {
   });
 });
 
-// let calcScrollValue = () => {
-//   let scrollProgress = document.getElementById("progress");
-//   let progressValue = document.getElementById("progress-value");
-//   let pos = document.documentElement.scrollTop;
-//   let calcHeight =
-//     document.documentElement.scrollHeight -
-//     document.documentElement.clientHeight;
-//   let scrollValue = Math.round((pos * 100) / calcHeight);
-//   if (pos > 100) {
-//     scrollProgress.style.display = "grid";
-//   } else {
-//     scrollProgress.style.display = "none";
-//   }
-//   scrollProgress.addEventListener("click", () => {
-//     document.documentElement.scrollTop = 0;
-//   });
-//   scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-// };
-// window.onscroll = calcScrollValue;
-// window.onload = calcScrollValue;
 
 
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+
+ScrollReveal().reveal(`.text-holder`, {origin: 'bottom'})
+ScrollReveal().reveal(`.social-icons`, {origin: 'left', delay: 800})
+ScrollReveal().reveal(`.rock`, {origin: 'bottom', delay: 600})
+ScrollReveal().reveal(`.btn3`, {origin: 'bottom', delay: 600})
+ScrollReveal().reveal(`.send`, {origin: 'right', delay: 600})
+ScrollReveal().reveal(`.about-col-1`, {origin: 'right', delay: 1000})
+ScrollReveal().reveal(`.left-area`, {origin: 'left', delay: 1000})
+ScrollReveal().reveal(`.about-header`, {origin: 'bottom', delay: 700})
+ScrollReveal().reveal(`.title`, {origin: 'bottom', delay: 500})

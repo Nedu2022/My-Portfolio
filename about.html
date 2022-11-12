@@ -36,16 +36,6 @@
         <img src="/images/favicon.png" alt="">
       </div>
 
-      <!-- --------------ScrollToTop----------------- -->
-
-      <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-          <i class="fas fa-solid fa-arrow-up"></i>
-        </svg>
-      </div>
-
-
       <!-- --------------Navbar----------------- -->
 
       <header class="header">
@@ -96,6 +86,13 @@
         </nav>
 
 
+      <div class="dl-container">
+        <div class="header-content">
+          <div class="about-header">About <span class="color"> Me...</span>
+        </div>
+      </div>
+
+
       </header>
       <!-- --------------About----------------- -->
 
@@ -103,7 +100,6 @@
       <div id="about">
 
         <div class="container-about">
-          <div class="about-header">About <span class="color"> Me </span>
           </div>
           <div class="row">
             <div class="about-col-1">
@@ -171,7 +167,7 @@
                   <h5>RESPONSIVE</h5>
               </div>
           </div>
-
+<!-- 
 
             <div class="lock">
               <div class="block">
@@ -262,7 +258,7 @@
           </div>
         </div>
       </div>
-
+ -->
 
 
 
@@ -309,97 +305,18 @@
   <!-- Preloader -->
   <script src="/Script/preloader.js"></script>
 
+  <!--=============== SCROLLREVEAL ===============-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
   <!-- --------------Script----------------- -->
   <script src="/Script/main.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      var progressPath = document.querySelector('.progress-wrap path');
-      var pathLength = progressPath.getTotalLength();
-  
-      progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-      progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-      progressPath.style.strokeDashoffset = pathLength;
-      progressPath.getBoundingClientRect();
-      progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-  
-      var updateProgress = function () {
-        var scroll = $(window).scrollTop();
-        var height = $(document).height() - $(window).height();
-        var progress = pathLength - (scroll * pathLength / height);
-        progressPath.style.strokeDashoffset = progress;
-      }
-  
-      updateProgress();
-      $(window).scroll(updateProgress);
-  
-      var offset = 100;
-      var duration = 550;
-  
-      jQuery(window).on('scroll', function () {
-        if (jQuery(this).scrollTop() > offset) {
-          jQuery('.progress-wrap').addClass('active-progress');
-        } else {
-          jQuery('.progress-wrap').removeClass('active-progress');
-        }
-      });
-  
-      jQuery('.progress-wrap').on('click', function (event) {
-        event.preventDefault();
-        jQuery('html, body').animate({
-          scrollTop: 0
-        }, duration);
-        return false;
-      })
-    });
-  </script>
-
 </body>
 
 
-<!-- <script>
-  $(document).ready(function () {
-    var progressPath = document.querySelector('.progress-wrap path');
-    var pathLength = progressPath.getTotalLength();
-
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-
-    var updateProgress = function () {
-      var scroll = $(window).scrollTop();
-      var height = $(document).height() - $(window).height();
-      var progress = pathLength - (scroll * pathLength / height);
-      progressPath.style.strokeDashoffset = progress;
-    }
-
-    updateProgress();
-    $(window).scroll(updateProgress);
-
-    var offset = 50;
-    var duration = 550;
-
-    jQuery(window).on('scroll', function () {
-      if (jQuery(this).scrollTop() > offset) {
-        jQuery('.progress-wrap').addClass('active-progress');
-      } else {
-        jQuery('.progress-wrap').removeClass('active-progress');
-      }
-    });
-
-    jQuery('.progress-wrap').on('click', function (event) {
-      event.preventDefault();
-      jQuery('html, body').animate({
-        scrollTop: 0
-      }, duration);
-      return false;
-    })
-  });
-</script> -->
 <script>
   $(function () {
 
@@ -422,7 +339,7 @@
     $(window).on("load", function () {
       setTimeout(function () {
         HideLoad(); // call out animations.
-      }, 3000);
+      }, 700, 'ease-in');
     });
   });
 </script>
@@ -439,6 +356,10 @@
 
 <!-- Preloader -->
 <script src="/Script/preloader.js"></script>
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
 
 <!-- --------------Script----------------- -->
 <script src="/Script/main.js"></script>
