@@ -872,6 +872,11 @@ button:hover .circle .icon.arrow {
   }
 }
 
+.show-scroll {
+  bottom: 3rem;
+  right: 3rem;
+}
+
 /* Mobile Responsiveness */
 @media screen and (min-width: 320px) and (max-width: 800px) {
   .logo {
