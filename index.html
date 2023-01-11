@@ -100,7 +100,7 @@
 
         <div class="text-holder">
           <h1>Nwabuokei Chinedu</h1>
-          <h3>Hi, I'm a <span class="auto-input">Frontend Developer</span></h3>
+          <h3>Hi, I'm a <span class="auto-input"></span></h3>
         </div>
 
         <!-- Social Icons -->
@@ -141,6 +141,7 @@
 
   <!-- --------------Script----------------- -->
   <script src="/Script/main.js"></script>
+  
 </body>
 
 <script>
@@ -167,8 +168,17 @@
         HideLoad(); // call out animations.
       }, 800, 'ease-in');
     });
+
+    const typed = new Typed(".auto-input", {
+      strings: ["Full Stack Developer", "Frontend Developer", "Software Engineer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
   });
 </script>
+
+
 
 <!-- --------------Jquery Scripts----------------- -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
