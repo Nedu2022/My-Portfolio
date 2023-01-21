@@ -568,6 +568,10 @@ button:hover .circle .icon.arrow {
     justify-content: space-evenly;
   }
 
+  .text-holder h3 span {
+    font-size: 28px;
+}
+
   .overlay {
     display: none;
   }

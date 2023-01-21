@@ -893,6 +893,10 @@ button:hover .circle .icon.arrow {
     text-align: left;
   }
 
+  .login-box {
+    padding: 6px;
+}
+
   .touch-wrap {
     display: flex;
     flex-direction: column;

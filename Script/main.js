@@ -1,3 +1,4 @@
+'use strict';
 const menuIcon = document.querySelector(".hamburger-menu");
 const navbar = document.getElementById("navbar");
 const overlay = document.querySelector(".overlay");
@@ -32,36 +33,58 @@ menuIcon.addEventListener("click", () => {
   });
 });
 
+
+// Auto-type Effect
+
+const words = ["Full Stack Developer", "Frontend Developer", "Software Engineer"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 500);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	loopDeleting();
+};
+
+typingEffect();
+
+
+
+
 //----------------Navbar-------------//
 window.addEventListener("scroll", () => {
   let navbar = document.getElementById("navbar");
   navbar.classList.toggle("fixed", this.window.scrollY > 0);
 });
 
-const block = document.querySelectorAll(".block");
-addEventListener("load", function () {
-  block.forEach((item) => {
-    let numElement = item.querySelector(".num");
-    let num = parseInt(numElement.innerText);
-    let count = 0;
-    let time = 2000 / num;
-    let circle = item.querySelector(".circle");
-    setInterval(() => {
-      if (count == num) {
-        clearInterval();
-      } else {
-        count += 1;
-        numElement.innerText = count;
-      }
-    }, time);
-    circle.style.strokeDashoffset = 503 - 503 * (num / 100);
-    let dots = item.querySelector(".dots");
-    dots.style.transform = `rotate(${360 * (num / 100)}deg)`;
-    if (num == 100) {
-      dots.style.opacity = 0;
-    }
-  });
-});
 
 
 function scrollActive() {
