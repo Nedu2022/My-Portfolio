@@ -34,7 +34,45 @@ menuIcon.addEventListener("click", () => {
 });
 
 
+
+
+//----------------Navbar-------------//
+window.addEventListener("scroll", () => {
+  let navbar = document.getElementById("navbar");
+  navbar.classList.toggle("fixed", this.window.scrollY > 0);
+});
+
+
+
+function scrollActive() {
+const scrollY = window.pageYOffset
+
+  sections.forEach(current =>{
+    const sectionHeight = current.offsetHeight,
+          sectionTop = current.offsetTop - 58,
+          sectionId = current.getAttribute('id')
+    
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+    } else {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+
+
 // Auto-type Effect
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+
 
 const words = ["Full Stack Developer", "Frontend Developer", "Software Engineer"];
 let i = 0;
@@ -77,44 +115,6 @@ function deletingEffect() {
 typingEffect();
 
 
-
-
-//----------------Navbar-------------//
-window.addEventListener("scroll", () => {
-  let navbar = document.getElementById("navbar");
-  navbar.classList.toggle("fixed", this.window.scrollY > 0);
-});
-
-
-
-function scrollActive() {
-const scrollY = window.pageYOffset
-
-  sections.forEach(current =>{
-    const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 58,
-          sectionId = current.getAttribute('id')
-    
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
-    } else {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
-    }
-  });
-}
-
-window.addEventListener('scroll', scrollActive);
-
-
-
-
-const sr = ScrollReveal({
-  origin: 'bottom',
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
-  // reset: true
-})
 
 ScrollReveal().reveal(`.text-holder`, {origin: 'bottom'})
 ScrollReveal().reveal(`.social-icons`, {origin: 'left', delay: 800})
