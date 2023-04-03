@@ -29,18 +29,8 @@
 
 <title>Portfolio</title>
 
-<body>
-
-  <div>
 
     <body class="cursor-effect personal-page">
-
-      <!-- --------------Preloader----------------- -->
-
-      <div class="preloader">
-        <img src="/images/favicon.png" alt="">
-      </div>
-
 
       <!-- --------------ScrollToTop----------------- -->
 
@@ -49,7 +39,7 @@
       <header class="header">
         <nav id="navbar">
           <div class="logo">
-            <h1><span class="logo-name">N</span>C</h1>
+            <img src="./images/favicon.png" alt="">
           </div>
 
           <div class="overlay"></div>
@@ -206,60 +196,11 @@
 
   </div>
 
-  <!-- --------------Jquery Scripts----------------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Preloader -->
-  <script src="/Script/preloader.js"></script>
-
-  <!--=============== SCROLLREVEAL ===============-->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-  <!-- --------------Script----------------- -->
-  <script src="/Script/main.js"></script>
-
-</body>
-
-
-<script>
-  $(function () {
-
-    "use strict";
-
-    // ========================================================================= //
-    //  Loading
-    // ========================================================================= //
-
-    function HideLoad() {
-      $('.preloader').fadeOut(400, function () {
-        $(this).remove();
-      });
-      $("body").css({
-        overflow: "auto",
-        "overflow-x": "hidden"
-      });
-    }
-
-    $(window).on("load", function () {
-      setTimeout(function () {
-        HideLoad(); // call out animations.
-      }, 200, 'ease-in');
-    });
-  });
-</script>
-
-
-
 
 <!-- --------------Jquery Scripts----------------- -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
   integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- Preloader -->
-<script src="/Script/preloader.js"></script>
 
 <!--=============== SCROLLREVEAL ===============-->
 <script src="https://unpkg.com/scrollreveal"></script>

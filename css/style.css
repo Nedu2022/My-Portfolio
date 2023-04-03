@@ -77,12 +77,14 @@ body.cursor-effect #cursor {
 }
 
 .logo {
-  font-size: 58px;
-  margin-left: 5rem;
   z-index: 5;
   transition: all 0.9s ease;
 }
 
+.logo img{
+  width: 68px;
+  align-items: center;
+}
 .logo:hover {
   transform: rotate(360deg);
 }

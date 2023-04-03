@@ -1,4 +1,4 @@
-/* <============================ CSS Reset ==============================>
+/* <============================ CSS Reset ==============================> */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  /* overflow: hidden; */
   background-color: #000;
 }
 
@@ -41,26 +40,6 @@ select:-webkit-autofill:focus {
   border-radius: 10px;
 }
 
-
-
-/* <============================ Preloader ==============================> */
-
-.preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgb(15, 15, 15);
-  display: grid;
-  place-items: center;
-  z-index: 9999999;
-  font-family: 'Bungee Shade', cursive;
-}
-
-.preloader img {
-  width: 120px;
-}
 
 
 canvas {
@@ -128,10 +107,13 @@ body.cursor-effect #cursor {
 
 
 .logo {
-  font-size: 48px;
-  margin-left: 5rem;
   z-index: 5;
   transition: all 0.9s ease;
+}
+
+.logo img{
+  width: 68px;
+  align-items: center;
 }
 
 .logo:hover {
