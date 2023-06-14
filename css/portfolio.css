@@ -593,9 +593,7 @@ button:hover .circle .icon.arrow {
     z-index: 5;
   }
 
-  .preloader img {
-    width: 78px;
-  }
+
 
   #navbar {
     height: 7rem;
@@ -857,9 +855,6 @@ button:hover .circle .icon.arrow {
   }
 
 
-  .preloader img {
-    width: 95px;
-  }
 
   #navbar {
     height: 7rem;
