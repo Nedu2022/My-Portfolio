@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
 
 
 function scrollActive() {
-const scrollY = window.pageYOffset
+const scrollY = window.pageYOffset;
 
   sections.forEach(current =>{
     const sectionHeight = current.offsetHeight,
@@ -74,7 +74,7 @@ const sr = ScrollReveal({
 })
 
 
-const words = ["Full Stack Developer", "Frontend Developer", "Software Engineer"];
+const words = ["Frontend Developer"];
 let i = 0;
 let timer;
 
